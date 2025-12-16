@@ -2,7 +2,7 @@
   <v-card 
   v-for="job in jobs"
   :key="job.id"
-  class="mx-auto" subtitle="The #1 Vue UI Library" width="400">
+  class="mx-auto" :subtitle="job.price_offer" width="400">
     <template v-slot:title>
       <span class="font-weight-black">{{ job.title }}</span>
     </template>
